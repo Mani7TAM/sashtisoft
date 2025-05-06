@@ -24,8 +24,8 @@ const AboutSectionOne = () => {
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 lg:w-1/2">
               <SectionTitle
-                title="Crafted for Sashtisoft, SaaS and Business Sites."
-                paragraph="The main ‘thrust’ is to focus on educating attendees on how to best protect highly vulnerable business applications with interactive panel discussions and roundtables."
+                title="Sashtisoft"
+                paragraph="With 10+ years of experience and a passion for solving complex problems, we specialize in full-stack systems, real-time communication, data-driven dashboards, and secure API integrations."
                 mb="44px"
               />
 

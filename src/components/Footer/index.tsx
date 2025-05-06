@@ -21,14 +21,13 @@ const Footer = () => {
                   <Image
                     src="/images/logo/logo.png"
                     alt="logo"
-                    className="hidden w-30 dark:block"
-                    width={140}
+                    className="hidden dark:block"
+                    width={30}
                     height={30}
                   />
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Integer lobortis.
+                Transforming ideas into intelligent, real-time applications using AI-driven development, modern frameworks, and full-stack expertise.
                 </p>
                 <div className="flex items-center">
                   <a
@@ -120,7 +119,7 @@ const Footer = () => {
                       href="/blog"
                       className="mb-4 inline-block text-base text-body-color duration-300 hover:text-primary dark:text-body-color-dark dark:hover:text-primary"
                     >
-                      Blog
+                      Projects
                     </Link>
                   </li>
                   <li>

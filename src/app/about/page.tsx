@@ -14,8 +14,8 @@ const AboutPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Who We Are"
+        description="Sashtisoft is a next-gen software development company led by seasoned full-stack developer Mani, delivering intelligent, AI-infused applications across web and mobile platforms. "
       />
       <AboutSectionOne />
       <AboutSectionTwo />
