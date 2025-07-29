@@ -291,7 +291,7 @@ const BlogSidebarPage = () => {
                     </span>
                   </div>
                   <p className="text-body-color mb-10 text-base leading-relaxed font-medium sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
-                    For more articles like this, follow the blog and reach out if you'd like to collaborate on a project.
+                    For more articles like this, follow the blog and reach out if you&apos;d like to collaborate on a project.
                   </p>
                   <div className="items-center justify-between sm:flex">
                     <div className="mb-5">
