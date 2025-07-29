@@ -7,8 +7,9 @@ import Image from "next/image";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog Details Page | Free Next.js Template for Sashtisoft and SaaS",
-  description: "This is Blog Details Page for Sashtisoft Nextjs Template",
+  title: "Blog Sidebar | Next.js, Tailwind and TypeScript",
+  description:
+    "More posts and resources on using Next.js 15, Tailwind CSS v4 and TypeScript effectively.",
   // other metadata
 };
 
