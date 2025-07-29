@@ -31,7 +31,7 @@ const BlogSidebarPage = () => {
                         <div className="relative h-10 w-10 overflow-hidden rounded-full">
                           <Image
                             src="/images/blog/author-02.png"
-                            alt="author"
+                            alt="Author Musharof Chy"
                             fill
                           />
                         </div>
@@ -114,7 +114,7 @@ const BlogSidebarPage = () => {
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
                       <Image
                         src="/images/blog/blog-details-01.jpg"
-                        alt="image"
+                        alt="Office collaboration"
                         fill
                         className="h-full w-full object-cover object-center"
                       />
