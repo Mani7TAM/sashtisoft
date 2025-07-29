@@ -31,8 +31,7 @@ const AboutSectionTwo = () => {
                   Bug free code
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Automated tests and continuous integration keep every deployment stable and dependable.
                 </p>
               </div>
               <div className="mb-9">
@@ -40,8 +39,7 @@ const AboutSectionTwo = () => {
                   Premier support
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt.
+                  I offer hands-on assistance and fast turnarounds so you can focus on growing your product.
                 </p>
               </div>
               <div className="mb-1">
@@ -49,8 +47,7 @@ const AboutSectionTwo = () => {
                   Next.js
                 </h3>
                 <p className="text-base font-medium leading-relaxed text-body-color sm:text-lg sm:leading-relaxed">
-                  Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt
-                  consectetur adipiscing elit setim.
+                  Leveraging Next.js means optimized performance, SEO, and a great developer experience.
                 </p>
               </div>
             </div>
