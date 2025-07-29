@@ -5,8 +5,9 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Page | Free Next.js Template for Sashtisoft and SaaS",
-  description: "This is About Page for Sashtisoft Nextjs Template",
+  title: "About Sashtisoft | AI-Powered Software Solutions",
+  description:
+    "Learn about Sashtisoft and our mission to build innovative AI-powered applications.",
   // other metadata
 };
 
