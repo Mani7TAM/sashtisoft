@@ -5,9 +5,9 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Sashtisoft Insights",
+  title: "Blog Page | Latest Posts on Next.js and TypeScript",
   description:
-    "Articles and updates from the Sashtisoft team on software and AI.",
+    "Read about new features in Next.js 15, Tailwind CSS v4 tips, and TypeScript best practices.",
   // other metadata
 };
 
