@@ -59,14 +59,14 @@ const Header = () => {
               >
                 <Image
                   src="/images/logo/logo-2.svg"
-                  alt="logo"
+                  alt="Sashtisoft logo"
                   width={30}
                   height={30}
                   className="w-full dark:hidden"
                 />
-                <Image 
+                <Image
                   src="/images/logo/logo.png"
-                  alt="logo"
+                  alt="Sashtisoft logo"
                   width={30}
                   height={30}
                   className="hidden dark:block"
@@ -172,7 +172,7 @@ const Header = () => {
                   href="#"
                   className="ease-in-up shadow-btn hover:shadow-btn-hover bg-primary hover:bg-primary/90 hidden rounded-xs px-8 py-3 text-base font-medium text-white transition duration-300 md:block md:px-9 lg:px-6 xl:px-9"
                 >
-                  Get Touch
+                  Get in Touch
                 </Link>
                 <div>
                   <ThemeToggler />

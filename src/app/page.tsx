@@ -12,8 +12,9 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Free Next.js Template for Sashtisoft and SaaS",
-  description: "This is Home for Sashtisoft Nextjs Template",
+  title: "Sashtisoft | AI-Powered Software Solutions",
+  description:
+    "Welcome to Sashtisoft, your partner for intelligent, AI-driven software across web and mobile.",
   // other metadata
 };
 

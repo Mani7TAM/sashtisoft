@@ -3,8 +3,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Sign Up Page | Free Next.js Template for Sashtisoft and SaaS",
-  description: "This is Sign Up Page for Sashtisoft Nextjs Template",
+  title: "Sign Up | Sashtisoft",
+  description: "Create a Sashtisoft account to manage your projects.",
   // other metadata
 };
 
