@@ -1,6 +1,54 @@
-import NewsletterBox from "./NewsletterBox";
+"use client";
+
+import React, { useState } from "react";
+import NewsLatterBox from "./NewsLatterBox";
+
+type FormState = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+const initialState: FormState = {
+  name: "",
+  email: "",
+  message: "",
+};
 
 const Contact = () => {
+  const [form, setForm] = useState<FormState>(initialState);
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+      if (res.ok) {
+        setStatus("success");
+        setForm(initialState);
+      } else {
+        setStatus("error");
+      }
+    } catch (err) {
+      setStatus("error");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section id="contact" className="overflow-hidden py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -17,7 +65,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Our support team will get back to you ASAP via email.
               </p>
-              <form>
+              <form onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -29,6 +77,9 @@ const Contact = () => {
                       </label>
                       <input
                         type="text"
+                        name="name"
+                        value={form.name}
+                        onChange={handleChange}
                         placeholder="Enter your name"
                         className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -44,6 +95,9 @@ const Contact = () => {
                       </label>
                       <input
                         type="email"
+                        name="email"
+                        value={form.email}
+                        onChange={handleChange}
                         placeholder="Enter your email"
                         className="border-stroke w-full rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
                       />
@@ -59,6 +113,8 @@ const Contact = () => {
                       </label>
                       <textarea
                         name="message"
+                        value={form.message}
+                        onChange={handleChange}
                         rows={5}
                         placeholder="Enter your Message"
                         className="border-stroke w-full resize-none rounded-xs border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-hidden focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:focus:border-primary dark:focus:shadow-none"
@@ -66,9 +122,19 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-xs bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 dark:shadow-submit-dark">
-                      Submit Ticket
+                    <button
+                      type="submit"
+                      disabled={loading}
+                      className="rounded-xs bg-primary px-9 py-4 text-base font-medium text-white shadow-submit duration-300 hover:bg-primary/90 disabled:cursor-not-allowed disabled:opacity-70 dark:shadow-submit-dark"
+                    >
+                      {loading ? "Sending..." : "Submit Ticket"}
                     </button>
+                    {status === "success" && (
+                      <p className="mt-4 text-sm text-green-600">Message sent successfully.</p>
+                    )}
+                    {status === "error" && (
+                      <p className="mt-4 text-sm text-red-600">Unable to send message.</p>
+                    )}
                   </div>
                 </div>
               </form>
