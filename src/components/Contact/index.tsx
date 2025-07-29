@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import NewsLatterBox from "./NewsLatterBox";
+import NewsletterBox from "./NewsletterBox";
 
 type FormState = {
   name: string;
