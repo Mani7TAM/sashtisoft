@@ -110,7 +110,7 @@ const BlogDetailsPage = () => {
                     <div className="relative aspect-97/60 w-full sm:aspect-97/44">
                       <Image
                         src="/images/blog/blog-details-02.jpg"
-                        alt="Team meeting"
+                        alt="Blog post illustration"
                         fill
                         className="object-cover object-center"
                       />

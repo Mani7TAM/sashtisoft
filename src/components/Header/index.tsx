@@ -59,14 +59,14 @@ const Header = () => {
               >
                 <Image
                   src="/images/logo/logo-2.svg"
-                  alt="Company logo"
+                  alt="Sashtisoft logo"
                   width={30}
                   height={30}
                   className="w-full dark:hidden"
                 />
                 <Image
                   src="/images/logo/logo.png"
-                  alt="Company logo"
+                  alt="Sashtisoft logo"
                   width={30}
                   height={30}
                   className="hidden dark:block"

@@ -26,7 +26,7 @@ export default function Video() {
                 <div className="relative aspect-77/40 items-center justify-center">
                   <Image
                     src="/images/video/image.png"
-                    alt="video image"
+                    alt="Video preview screenshot"
                     className="object-cover"
                     fill
                   />
