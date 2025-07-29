@@ -3,45 +3,45 @@ import { Blog } from "@/types/blog";
 const blogData: Blog[] = [
   {
     id: 1,
-    title: "Best UI components for modern websites",
+    title: "Introducing Next.js 15: What's New?",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Next.js 15 focuses on faster builds and simplified data fetching. Learn about the key changes and how to upgrade your projects.",
     image: "/images/blog/blog-01.jpg",
     author: {
       name: "Samuyl Joshi",
       image: "/images/blog/author-01.png",
-      designation: "Graphic Designer",
+      designation: "Frontend Engineer",
     },
-    tags: ["creative"],
-    publishDate: "2025",
+    tags: ["nextjs", "release"],
+    publishDate: "July 2025",
   },
   {
     id: 2,
-    title: "9 simple ways to improve your design skills",
+    title: "Tailwind CSS v4 Tips and Tricks",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "Tailwind CSS v4 introduces new utilities and a more intuitive config. Discover tips for customizing your design system.",
     image: "/images/blog/blog-02.jpg",
     author: {
       name: "Musharof Chy",
       image: "/images/blog/author-02.png",
       designation: "Content Writer",
     },
-    tags: ["computer"],
-    publishDate: "2025",
+    tags: ["tailwind", "design"],
+    publishDate: "June 2025",
   },
   {
     id: 3,
-    title: "Tips to quickly improve your coding speed.",
+    title: "Why TypeScript Improves Developer Productivity",
     paragraph:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet dictum neque, laoreet dolor.",
+      "TypeScript provides type safety and IDE support that help catch errors early. See how it streamlines complex codebases.",
     image: "/images/blog/blog-03.jpg",
     author: {
       name: "Lethium Deo",
       image: "/images/blog/author-03.png",
-      designation: "Graphic Designer",
+      designation: "Software Architect",
     },
-    tags: ["design"],
-    publishDate: "2025",
+    tags: ["typescript", "development"],
+    publishDate: "May 2025",
   },
 ];
 export default blogData;

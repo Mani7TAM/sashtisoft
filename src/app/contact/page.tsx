@@ -4,8 +4,8 @@ import Contact from "@/components/Contact";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact Page | Free Next.js Template for Sashtisoft and SaaS",
-  description: "This is Contact Page for Sashtisoft Nextjs Template",
+  title: "Contact Us | Sashtisoft",
+  description: "Get in touch with the Sashtisoft team.",
   // other metadata
 };
 

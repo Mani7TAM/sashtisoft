@@ -14,7 +14,7 @@ export default function Video() {
         <div className="container">
           <SectionTitle
             title="We are ready to help"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="Watch this brief demo to see how I approach architecture, performance and collaboration."
             center
             mb="80px"
           />
@@ -26,7 +26,7 @@ export default function Video() {
                 <div className="relative aspect-77/40 items-center justify-center">
                   <Image
                     src="/images/video/image.png"
-                    alt="video image"
+                    alt="Video preview screenshot"
                     className="object-cover"
                     fill
                   />
